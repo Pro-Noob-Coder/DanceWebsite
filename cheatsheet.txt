@@ -1,0 +1,15 @@
+touch .gitignore
+git config --global uder.name Sudipta
+git config --global user.email sudiptabera127@gmail.com
+git init
+git add
+git commit -m "Initial Commit"
+git status # just to see if the working tree is clean
+ssh-keygen -t ed25519 -C "sudiptabera127@gmail.com"
+ssh-add ~</.ssh/id_ed25519> # add my ssh private key
+$ clip < ~/.ssh/id_ed25519.pub  # it copies the contents of the id_ed25519.pub file to my clipboard
+add the copied code to my GitHub accouunt
+git remote add origin <ssh url.git>
+git push origin master 
+  
+
