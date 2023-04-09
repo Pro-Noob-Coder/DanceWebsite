@@ -1,0 +1,25 @@
+// base template to be used in every page
+doctype html
+html
+  head
+    title StepUp Dance Academy
+    block scripts
+    block style 
+  body
+    nav#navbar 
+     ul 
+      #logo 
+        img(src='../static/img/logo3.png')
+        p Step Up
+     li #[a(href="/") Home]
+     li #[a(href="/") About]
+     li #[a(href="/") Services]
+     li #[a(href="/") Class Info]
+     li #[a(href="/") Join Us]
+     li #[a(href="/contact") Contact Us]
+
+    block content
+    footer#footer 
+      | Copyright@StepUpDanceAcademy.com 
+      || All rights reserved 
+      
